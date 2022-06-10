@@ -18,5 +18,15 @@
             "Pacuna\\Schemas": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pacuna\\Schemas\\SchemasServiceProvider"
+            ],
+            "aliases": {
+                "PGSchema": "Pacuna\\Schemas\\Facades\\PGSchema"
+            }
+        }
+    }
 }
